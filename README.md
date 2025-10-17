@@ -1,28 +1,37 @@
 # Hello World (Static Web App)
 
 ## Overview
-A minimal static web page that displays “Hello World” using both an H1 heading and a preformatted text block. Designed to be hosted on GitHub Pages.
+A minimal static web page that displays “Hello World” using both an H1 heading and a preformatted text block, and now also shows the attached image file `hello.jpg`. Designed to be hosted on GitHub Pages with zero build steps.
 
-- Includes:
+- Features:
   - An H1 tag with “Hello World”
   - A pre tag with “Hello World”
+  - An img tag referencing `hello.jpg` (responsive with caption)
   - Lightweight, responsive styling
-  - No build step; pure HTML/CSS/JS
+  - Pure HTML/CSS/JS
 
 ## Setup
 1. Create a new GitHub repository.
-2. Add the provided index.html and this README.md to the repository root.
-3. Commit and push the files to your default branch (e.g., main).
+2. Add the following files to the repository root:
+   - `index.html`
+   - `README.md`
+   - `hello.jpg` (the provided image attachment)
+3. Commit and push the files to your default branch (e.g., `main`).
 4. Enable GitHub Pages:
    - Go to Settings → Pages
    - Source: Deploy from a branch
-   - Branch: main (root)
+   - Branch: `main` (root)
    - Save and wait for the published URL to appear.
-5. Visit the GitHub Pages URL to see the “Hello World” page.
+5. Visit the GitHub Pages URL to see the page with the heading, preformatted text, and the image.
 
 ## Usage
-- Local: Open index.html in your browser.
+- Local: Open `index.html` in your browser. Ensure `hello.jpg` is in the same directory so the image displays.
 - Online: Navigate to your repository’s GitHub Pages URL (e.g., https://<username>.github.io/<repo>/).
+
+## Improvements in Round 2
+- Added display of the provided image `hello.jpg` via an `<img>` tag with a valid `src`.
+- Included a semantic `<figure>` and `<figcaption>` for the image.
+- Added minor visual polish and an accessibility-friendly status message that notifies if the image fails to load.
 
 ## License
 MIT License
